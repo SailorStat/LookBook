@@ -1,0 +1,290 @@
+.post {
+    width: 100%;
+}
+
+.post__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post__creator {
+    position: relative;
+    padding-left: 55px;
+}
+
+.creator__avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    cursor: pointer;
+}
+
+.creator__avatar img {
+    width: 50px;
+    height: auto;
+
+    border-radius: 50%;
+}
+
+.creator__author {
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.creator__time {
+    font-size: 13px;
+    font-weight: 600;
+
+    opacity: .6;
+}
+
+.post__options {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.options__item {
+    display: flex;
+    margin: 0 2px;
+    padding: 7px 20px;
+
+    line-height: 1;
+
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.options__item:hover {
+    border: 1px solid rgba(0, 0, 0, 1);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.options__item:active {
+    border: 1px solid rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, .1);
+}
+
+.options__symbol {
+    margin: 0;
+    padding: 0;
+}
+
+.options__title {
+    margin: 0;
+    margin-left: 5px;
+    padding: 0;
+}
+
+.post__body {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+/* Post image */
+.post__image {
+    margin-right: 10px;
+    padding: 10px 20px;
+    width: 60%;
+
+    background: rgba(255, 255, 255, .7);
+    border-radius: 10px;
+}
+
+.post__img {
+    width: 100%;
+    text-align: center;`
+}
+
+.post__img img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.post__preview {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+.post__item {
+    margin: 0 1%;
+    flex: 18% 0 0;
+    height: 200px;
+}
+
+.post__item img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Post discus */
+.post__discus {
+    margin-right: 10px;
+    padding: 10px 20px;
+    width: 40%;
+
+    background: rgba(255, 255, 255, .7);
+    border-radius: 10px;
+}
+
+.post__estimation {
+    display: flex;
+}
+
+.post__value {
+    margin: 2px;
+    padding: 3px 10px;
+    position: relative;
+
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+.post__value i {
+    opacity: .5;
+}
+
+.post__value:hover {
+    border: 1px solid rgba(0, 0, 0, 1);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.post__value:hover i,
+.post__value:active i {
+    opacity: .7;
+}
+
+.post__value:active {
+    border: 1px solid rgba(0, 0, 0, 1);
+    background: rgba(0, 0, 0, .1);
+}
+
+.post__value.checked i {
+    color: #00b20e;
+    opacity: 1;
+}
+
+.post__value.checked .fa-thumbs-down {
+    color: #000;
+}
+
+.post__value span {
+    padding: 3px 7px;
+    display: none;
+    position: absolute;
+    top: -30px;
+    left: 5px;
+    z-index: 1;
+
+    color: #fff;
+    white-space: nowrap;
+
+    border-radius: 5px 5px 5px 0;
+    background: rgba(0, 0, 0, .7);
+}
+
+.post__value:hover span {
+    display: block;
+}
+
+/* Commentary */
+.post__com {
+    margin-top: 30px;
+}
+
+.com__creator {
+    position: relative;
+    padding-left: 55px;
+}
+
+.com__avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    cursor: pointer;
+}
+
+.com__avatar img {
+    width: 50px;
+    height: auto;
+
+    border-radius: 50%;
+}
+
+.com__author {
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.com__time {
+    font-size: 13px;
+    font-weight: 600;
+
+    opacity: .6;
+}
+
+.com__text {}
+
+.com__options {
+    display: flex;
+}
+
+.com__like {
+}
+
+.like {
+    margin: -5px;
+    padding: 5px;
+    opacity: .4;
+
+    cursor: pointer;
+}
+
+.like:hover {
+    opacity: .6;
+}
+
+.like.checked {
+    color: #b20005;
+    opacity: 1;
+}
+
+.com__discus {
+    margin: -5px -5px -5px 15px;
+    padding: 5px;
+    transform: translateY(1px);
+
+    cursor: pointer;
+}
+
+.com {
+    opacity: .5;
+}
+
+.com:hover {
+    opacity: .7;
+}
+
+/* Antwort */
+.com__com {
+    margin: 10px 0 0 55px;
+}
